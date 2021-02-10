@@ -59,6 +59,20 @@ const StyledHeader = styled.div`
          animation: ease-in-out .3s;
      }
  }
+
+
+ @media(max-width:500px){
+
+    height: 15vh;
+
+    h1{
+        font-size: 1.3rem;
+    }
+
+    .link{
+        font-size: 1rem;
+    }
+}
 `
 
 
