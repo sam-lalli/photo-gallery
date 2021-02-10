@@ -4,6 +4,7 @@ import About from './components/About';
 import Header from './components/Header';
 import { ImageList } from './components/ImageList';
 import Image from './components/Image';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       <Route path="/gallery/:id">
         <Image/>
       </Route>
+
+      <Footer/>
     </div>
   );
 }

@@ -123,11 +123,11 @@ export const gallery = [
         title: 'I Broke My Nose In 7 Places, Little Bit Of A Flex',
         week: 'Week 17'
     },
-    {
-        id: 17,
-        img: week18,
-        title: "You Always Find When You Aren't Searching",
-        week: 'Week 18'
-    },
+    // {
+    //     id: 17,
+    //     img: week18,
+    //     title: "You Always Find When You Aren't Searching",
+    //     week: 'Week 18'
+    // },
 ]
 

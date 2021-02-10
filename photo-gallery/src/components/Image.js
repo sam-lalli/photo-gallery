@@ -1,27 +1,58 @@
 import React from 'react'
 import { gallery } from '../gallery'
 import { useParams, Link } from 'react-router-dom'
+import styled from 'styled-components'
 
+
+const StyledDiv = styled.div`
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin: 5%;
+
+img{
+    height: 70vh;
+}
+
+h3{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    margin: 3%;
+
+    :hover{
+        color: white;
+        animation: ease-in-out .3s;
+    }
+}
+
+`
 
 const Image = () => {
 
     const params = useParams();
 
     const filteredImg = gallery.filter((image) => image.id == params.id)
-    console.log(filteredImg.img)
 
     return (
-        <div>
+        <StyledDiv>
             { filteredImg.map(({img, title}) => (
                 <div>
                     <img src={img} height={100}/>
                     <h3>{title}</h3>
-                    <Link to={'/'}>
+                    <Link className={'link'} to={'/'}>
                         <p>Go Back To Gallery</p>
                     </Link>
                 </div>
             ))}
-        </div>
+        </StyledDiv>
     )
 }
 
