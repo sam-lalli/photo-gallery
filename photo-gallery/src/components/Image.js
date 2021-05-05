@@ -16,9 +16,17 @@ img{
     height: 70vh;
 }
 
+.box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h3{
     font-size: 3rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .link{
@@ -44,7 +52,7 @@ const Image = () => {
     return (
         <StyledDiv>
             { filteredImg.map(({img, title}) => (
-                <div>
+                <div className={'box'}>
                     <img src={img} height={100}/>
                     <h3>{title}</h3>
                     <Link className={'link'} to={'/'}>

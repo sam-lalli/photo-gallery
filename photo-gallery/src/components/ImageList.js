@@ -36,6 +36,21 @@ const StyledCard = styled.div`
  p{
      font-size: 2rem;
  }
+
+
+ @media(max-width:500px){
+
+    .card{
+        width: 85%;
+    }
+
+    img{
+        margin: 5%;
+    }
+
+
+ }
+
 `
 
 export const ImageList = () => {
